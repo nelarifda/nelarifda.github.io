@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Goodreads - Python project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="title">Python Project</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html#aboutme">About Me</a></li>
+							<li><a href="index.html#projects">Projects</a></li>
+							<li><a href="index.html#footer">Contact</a></li>
+						</ul>
+				
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Goodreads Web Scraping and Exploratory Data Analysis (EDA)</h1>
+							<span class="image main"><img src="images/goodreads.jpg" alt="" /></span>
+							<h3>About</h3>
+							<p>This Python project consists of web scraping from Goodreads website about best book ever list and exploratory data analysis from the dataset. Web scraping was used to extract the titles, links, author names, average ratings, and scores. The dataset was saved in CSV file to be analyzed for data exploration.
+							</p>
+							<h3>Libraries used</h3>
+							<p>Libraries used for web scraping are BeautifulSoup, requests, pandas, and csv. While for exploratory analysis are pandas, seaborn, and matplotlib.pyplot
+							</p>
+							<h3>Techniques</h3>
+								<ol>
+									<li>Web scraping</li>
+										<p align="justify">Best book ever by Goodreads was scraped using BeautifulSoup and request libraries in Python. Titles, links, author names, average ratings, and scores were extracted from 1 page. Furthermore, 10 pages were extracted and the dataset was saved in CSV.</p>
+									<li>Data Cleaning</li>
+										<p align="justify">Data cleaning was started by standardizing decimal numbers into 2 decimal numbers for rating column, checking for duplicate and missing values, and understanding dataset information.</p>
+
+									<li>Future Relationship</li>
+										<p align="justify">Observed the correlation between features. Changed the data type into numbers to create the correlation table and heatmap. Creating heatmap using seaborn library.</p>
+									<li>Ask Question About Data</li>
+										<p align="justify">Doing an exploratory analysis of the data by asking questions. The first question was author with the most books. Got the answer by groupby and sort_values. The result was visualized with bar chart. Other questions are about the top 10 best authors, list of Stephen King’s books, and the highest rating book.</p>
+									
+								</ol>
+							<h3>Summarized Insights</h3>
+							<p align="justify">Web scrape from Goodreads about best book ever having result dataset in csv file. The dataset has titles, links, author names, average ratings, and scores columns with 1000 data. From the dataset, the exploratory analysis was done having results highest correlation features were rating and score. Stephen King was the author with the highest book in the list with 18 books, while author with the highest book rating was Jerry Weaver with title The Addiction Manifesto.</p>
+							<ul class="actions">
+								<li><a href="https://github.com/nelarifda/Goodreads_WebScraping_EDA_Python" class="button primary">View Project</a></li>
+							</ul>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://github.com/nelarifda" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/nelarifdanm/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+								<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

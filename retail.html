@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Retail Transaction - Excel project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="title">Excel Project</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html#aboutme">About Me</a></li>
+							<li><a href="index.html#projects">Projects</a></li>
+							<li><a href="index.html#footer">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Retail Transaction</h1>
+							<span class="image main"><img src="images/retail.jpg" alt="" /></span>
+							<h3>About</h3>
+							<p align="justify">This excel project is about retail transaction dataset from Kaggle. The dataset contains information about transactions, dates, customer names, products, total items, total costs, payment methods, city, store types, discounts applied, customer categories, seasons, and promotions. The project’s objective is to do exploratory data, extract insight, and know the correlation between each information. </p>
+							<h3>Techniques</h3>
+								<ol>
+									<li>Understanding Data and Brainstorming</li>
+										<p align="justify">Understanding what each column stands for and what can be gained from this dataset. Take note of what will be done and what analysis will be carried out.</p>
+									<li>Data Cleaning and Transformation</li>
+										<p align="justify">Dataset cleaning included handling duplicates, checking for missing values, changing data type (Date), splitting column Date to extract day, month, and year, and replacing values TRUE and FALSE into Yes and No in the Discount_Applied column. </p>
+									<li>Creating New Tables Using Power Query Editor</li>
+										<p align="justify">The product column has a value list of products. Then the data were split for each product into rows. The technique used was Power Query Editor. The product column was split into rows and data was cleaned to remove unnecessary spaces and strips. The new tables were created with the name Products. While the cleaned data table was named Cost.</p>
+									<li>Pivot Tables</li>
+										<p align="justify">Pivot tables were used to summarize and aggregate data. In this dataset pivot tables were used to analyze trends of the number transaction and total cost, top 10 most buy product, total transaction based on city and store type, and number of transactions by promotion. 
+											Create slicers that correlate all the pivot tables. Because there are 2 tables, it was necessary to checklist add this data to the data model when creating the pivot tables. 
+											</p>
+									<li>Data Visualization</li>
+										Multiple charts were used to visualize pivot tables
+										<ul>
+											<li align="justify">Combo chart (bar and line): to see trends of number transaction and total cost over time.</li>
+											<li align="justify">Bar chart: used to represent top 10 most buy product and total transaction by city and store type.</li>
+											<li align="justify">Pie chart: used to see the percentage transaction based on promotion given.</li>
+											<li align="justify">Slicer: include year, season, payment method, store type, customer category used to filter data based on specific factors and compare between factors for multiple-axis visualization.</li>
+										</ul>
+									<li>Interactive Dashboard</li>
+										<p align="justify">All the visualization was combined into 1 interactive dashboard and edited for the color to get better visualization. The dashboard is dynamic where it can be clicked to filter using slicer and the dashboard will show data based on the slicer we choose.</p>
+								</ol>
+							<h3>Summarized Insights</h3>
+								<ol>
+									<li align="justify">Discover trends of number transaction and total cost over time. With slicer, the dashboard showed the trends based on year, season, payment method, store type, and customer category. The trends fluctuated over the year, in 2021 was the lowest number of transaction and total cost.</li>
+									<li align="justify">Revealing the top 10 most buy products. Bar chart can compare products over the season. </li>
+									<li align="justify">Using slicer also can change the top 10 products based on the filter we use. Multi-select slicer allowing to get multiple filters in one visualization.</li>
+									<li align="justify">Identifying total transaction by city and store type with multi-axis bar chart. Bar chart showed comparison total transaction for all store types based on city. Then revealing store performance for each city.</li>
+									<li align="justify">Understanding the effect of using promotion for the number of transactions. With slicer,a the dashboard revealed the effect of promotion based on the slicer/filter.</li>
+										
+								</ol>
+							<span class="image main"><img src="images/Excel.png" alt="" /></span>
+							<ul class="actions">
+								<li><a href="https://github.com/nelarifda/RetailTransaction_Excel/tree/main" class="button primary">View Project</a></li>
+							</ul>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://github.com/nelarifda" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/nelarifdanm/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+								<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
